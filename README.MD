@@ -7,8 +7,11 @@ A clean, responsive, and multi-page example website built entirely using semanti
 ## Features
 
 **Multi-Page Navigation:** Easily navigate between different sections of the site.
+
 **Contact/Input Form:** A dedicated `form.html` page demonstrating structured user input fields.
+
 **Custom Styling:** Fully styled from scratch using `styles.css` without external CSS frameworks.
+
 **Clean Structure:** Well-organized file hierarchy for easy scalability.
 
 ---
