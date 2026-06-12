@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <form action="index.php" method="post" enctype="multipart/form-data">
+
+        <label for="username">username:</label>
+        <input placeholder="Enter Username" type="text" id="username" minlength="6" maxlength="13" required>
+
+        <br>
+
+        <label for="password">password:</label>
+        <input placeholder="1234567890" type="password" minlength="6" maxlength="13" id="password" required>
+
+        <br>
+
+        <label for="email">email:</label>
+        <input placeholder="user@example.com" type="email" id="email" required>
+
+        <br>
+
+        <label             for="phone">phone:</label>
+        <input placeholder="(XXX) XXX XXXX" type="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone" required>
+
+        <br>
+
+        <label for="bday">birthday</label>
+        <input type="date" id="bday" required>
+
+        <br>
+
+        <label             for="quantity">quantity:</label>
+        <input type="number" min="0" max="99" value="1" id="quantity" required>
+
+        <br>
+
+        <label for="Mr.">Mr. :</label>
+        <input type="radio" id="Mr" value="Mr" name="title" required>
+        <label for="Ms.">Ms. :</label>
+        <input type="radio" id="Ms" value="Ms" name="title" required>
+        <label for="PhD.">PhD. :</label>
+        <input type="radio" id="PhD" value="PhD" name="title" required>
+
+        <br>
+
+        <label for="payment">payment method:</label>
+        <select id="payment" required>
+            <option value="">Select a payment method</option>
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="giftcard">Gift Card</option>
+        </select>
+
+        <br>
+
+        <label for="checkbox">checkbox:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" value="yes">
+
+        <br>
+
+        <label for="typearea">typearea:</label>
+        <textarea id="typearea" name="typearea" rows="4" cols="20" placeholder="Enter your message here..."></textarea>
+
+        <br>
+
+        <label for="file">file upload:</label>
+        <input type="file" id="file" name="file" accept=".exe" required>
+
+        <br>
+
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+
+</body>
+</html>
